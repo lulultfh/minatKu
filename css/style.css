@@ -27,9 +27,15 @@ body{
     overflow: visible;
     box-sizing: border-box;
 }
+
 .logo a{
     font-size: 30px;
     text-decoration: none;
+}
+
+.logo-img{
+    width: 50;
+    height: auto;
 }
 
 .nav-links{
@@ -55,7 +61,7 @@ body{
 }
 
 .awal{
-    margin-top: 150px;
+    margin-top: 200px;
     font-family: Inter;
 }
 
