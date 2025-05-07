@@ -177,3 +177,29 @@ p{
     font-size: 16px;
     color: #213448;
   }
+
+  .ujian{
+    font-family: Inter;
+    color: #213448;
+  }
+
+  .ujian h2{
+    font-size: 30px;
+  }
+
+  .ujian a{
+    font-size: 20px;
+    color: #547792;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+
+  .ujian a:hover{
+    background-color: #ECEFCA;
+    color: #213448;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
