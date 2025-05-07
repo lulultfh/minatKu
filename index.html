@@ -7,8 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <nav class="navbar">
+      
+    <nav class="navbar" id="navbar">
         <div class="logo">
             <a href="index.html">
                 <img src="Assets/minatKu_Logo.png" alt="logo" class="logo-img">
@@ -62,5 +64,19 @@
             </div>
         </div>
     </section>
+    <script>
+        let prevScrollPos = window.pageYOffset;
+        const navbar = document.getElementById("navbar");
+      
+        window.addEventListener("scroll", () => {
+          const currentScrollPos = window.pageYOffset;
+          if (prevScrollPos > currentScrollPos) {
+            navbar.style.top = "0"; // scroll ke atas, navbar muncul
+          } else {
+            navbar.style.top = "-100px"; // scroll ke bawah, navbar sembunyi
+          }
+          prevScrollPos = currentScrollPos;
+        });
+      </script>
 </body>
 </html>
