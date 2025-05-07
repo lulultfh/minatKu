@@ -10,3 +10,55 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  rgba(#94B4C1, 0.8);
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+.logo a{
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.logo-img{
+    width: 150px;
+    height: auto;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #213448;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.nav-links a:hover{
+    color: #ECEFCA;
+}
+
+.bidang{
+    margin-top: 130px;
+    font-family: Inter;
+}
