@@ -6,7 +6,7 @@ minatKu is an educational platform, designed to assist Information Technology st
 
 # Key Features
 - **Interest-Based Quiz**: Discover your IT specialization through a personalized quiz.
-- **Result Analysis**: Get detailed suggestions based on your quiz result, aligned with IT fields like Web Dev, UI/UX, Data Science, etc.
+- **Result Analysis**: Get detailed suggestions based on your quiz result, aligned with IT fields like Programming, UI/UX, Data, and Network.
 - **Friendly UI**: A smooth and simple user experience with custom-designed visuals.
 
 # Demo
