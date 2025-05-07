@@ -28,6 +28,9 @@ const questions = [
   function startTest() {
     document.getElementById('startScreen').classList.add('hidden');
     document.getElementById('quizScreen').classList.remove('hidden');
+
+    document.body.classList.add('quiz-active');
+
     showQuestion();
   }
   
