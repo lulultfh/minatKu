@@ -12,7 +12,8 @@ minatKu is an educational platform, designed to assist Information Technology st
 # Demo
 This app is hosted on Vercel. 👉 [Click for try](https://minatku.vercel.app/)
 
+# Author
 This project was created for English for Professional Software Engineer Course, by:
-- Hanifatul Nadiva | 20230140203
-- Lu'lu' Luthfiah | 20230140209
-- Husna Kamila Syahida | 20230140238
+- Hanifatul Nadiva | 20230140203 | [@hanifatulnadiva](https://github.com/hanifatulnadiva)
+- Lu'lu' Luthfiah | 20230140209 | [@lulultfh](https://github.com/lulultfh)
+- Husna Kamila Syahida | 20230140238 | [@husnakamilaa](https://github.com/husnakamilaa)
