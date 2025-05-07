@@ -108,3 +108,104 @@ p{
   @keyframes blink {
     50% { border-color: transparent; }
   }
+
+  .box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .box {
+    width: 200px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.1); /* transparan */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-weight: bold;
+    opacity: 1;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.box.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #222;
+    color: #eee;
+    padding: 20px 0;
+    margin-top: 50px;
+    flex-wrap: wrap; /* Membiarkan elemen-elemen terbungkus */
+}
+
+.author {
+    margin: 15px;
+    display: flex;
+    flex-direction: column; /* Menjadikan nama dan ikon terpisah dalam kolom */
+    align-items: center; /* Mengatur konten tetap terpusat */
+}
+
+.author h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Menjaga ikon dalam satu baris per author */
+.author a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 0px;
+    font-size: 20px;
+}
+
+/* Menambahkan hover effect pada ikon */
+.author a:hover {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+/* Styling untuk ikon Font Awesome */
+.author a i {
+    margin-right: 8px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+/* Menjaga ikon dalam satu baris */
+.author {
+    display: flex;
+    flex-direction: row; /* Ikon ditampilkan dalam satu baris */
+    gap: 15px; /* Memberikan jarak antar ikon */
+    justify-content: center; /* Mengatur ikon agar tetap sejajar di tengah */
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .author {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
