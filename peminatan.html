@@ -1,57 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>minatKu-peminatan</title>
-    <link rel="stylesheet" href="css/peminatan.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interest Test - minatKu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/peminatan.css" />
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="Assets/minatKu_Logo.png" alt="logo" class="logo-img">
-                </a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="peminatan.html">Peminatan</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-        <ul class="bidang">
-            <div class="Pemrograman">
-                <h3>Pemrograman</h3>
-                <img src="Assets/Program_Element.png" alt="pemro">
-                <h4>The essence of technology development. 
-                    Programming is the process of writing, testing, 
-                    and maintaining code to make an application, software, 
-                    or system work.</h4>
-            </div>
-            <div class="UI/UX">
-                <h3>UI/UX</h3>
-                <img src="Assets/UX_element.png" alt="UI/UX">
-                <h4>This field focuses on how applications look (UI) 
-                    and how users feel when using them (UX). 
-                    The goal is to create an interface that is attractive, 
-                    easy to use, and enjoyable for the user.</h4>
-            </div>
-            <div class="Network">
-                <h3>Network</h3>
-                <img src="Assets/Network_Element.png" alt="network">
-                <h4>This field studies how devices connect and exchange data, 
-                    both locally and over the internet. The main focus is on 
-                    the security, speed, and stability of data communications.</h4>
-            </div>
-            <div class="Data">
-                <h3>Data</h3>
-                <img src="Assets/Data_Element.png" alt="data">
-                <h4>Processing data into useful information. This 
-                    field includes the collection, analysis and visualisation 
-                    of data to support better, evidence-based decision-making.</h4>
-            </div>
-        </ul>
+
+  <div class="container">
+    <!-- Start Screen -->
+    <div id="startScreen" class="section">
+      <h1 class="title">Welcome to <span class="highlight">minatKu</span> Interest Test</h1>
+      <p class="subtitle">Discover which IT field suits you best based on your preferences.</p>
+      <button onclick="startTest()" class="btn btn-primary">Start Test</button>
     </div>
+
+    <!-- Quiz Screen -->
+    <div id="quizScreen" class="section hidden">
+      <h2 class="question" id="questionText"></h2>
+      <div id="options" class="options"></div>
+      <div class="nav-buttons">
+        <button onclick="prevQuestion()" class="btn btn-secondary">Back</button>
+        <button onclick="nextQuestion()" class="btn btn-primary">Next</button>
+      </div>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="resultScreen" class="section hidden">
+      <h2 class="title result-title">Your Interest Result</h2>
+      <p class="result-text" id="resultText"></p>
+    </div>
+  </div>
+
+  <script src="js/peminatan.js"></script>
 </body>
 </html>
