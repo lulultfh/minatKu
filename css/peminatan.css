@@ -1,0 +1,12 @@
+head{
+    font-family: Inter;
+}
+
+body{
+    background: #ECEFCA;
+    background: linear-gradient(0deg, rgba(236, 239, 202, 1) 0%, rgba(148, 180, 193, 1) 50%, rgba(84, 119, 146, 1) 100%);
+    background-attachment: fixed;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
