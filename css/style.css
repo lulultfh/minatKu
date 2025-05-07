@@ -19,7 +19,7 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color:  rgba(#94B4C1, 0.8);
-    padding: 16px 20px;
+    padding: 10px 30px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -34,7 +34,7 @@ body{
 }
 
 .logo-img{
-    width: 50;
+    width: 150px;
     height: auto;
 }
 
@@ -50,7 +50,7 @@ body{
     color: #213448;
     font-family: Inter;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 20px;
     font-weight: bold;
     transition: color 0.3s ease;
     white-space: nowrap;
@@ -62,7 +62,7 @@ body{
 }
 
 .awal{
-    margin-top: 200px;
+    margin-top: 130px;
     font-family: Inter;
 }
 
@@ -73,6 +73,38 @@ h1{
 }
 
 p{
-    font-size: 35px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center; 
+    max-width: 800px;  
+    margin: 0 auto; 
+    font-size: 20px;
     color: #ECEFCA;
 }
+
+.typing-animation {
+    font-size: 3rem;
+    width: fit-content;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid rgba(255, 255, 255, 0.75);
+    animation: typing-loop 6s steps(16) infinite, blink 0.75s step-end infinite;
+  }
+  
+  .typing-animation span {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  @keyframes typing-loop {
+    0%   { width: 0 }
+    40%  { width: 16ch }
+    60%  { width: 16ch }
+    100% { width: 0 }
+  }  
+  
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
