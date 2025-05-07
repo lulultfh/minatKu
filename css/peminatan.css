@@ -23,6 +23,7 @@ body{
     z-index: 100;
     overflow: visible;
     box-sizing: border-box;
+    height: 85px;
 }
 
 .logo a{
@@ -46,12 +47,15 @@ body{
     text-decoration: none;
     color: #213448;
     font-family: Inter;
-    font-weight: 500;
+    /* font-weight: 500; */
     font-size: 15px;
     font-weight: bold;
     transition: color 0.3s ease;
     white-space: nowrap;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .nav-links a:hover{
