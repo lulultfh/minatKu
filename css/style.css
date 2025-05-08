@@ -137,6 +137,64 @@ p{
     50% { border-color: transparent; }
   }
 
+  #about {
+    padding: 50px 20px;
+    font-family: Inter, sans-serif;
+    color: #fff;
+    background-color: #4b4b4b(0, 0, 0, 0.6); /* Warna hitam transparan */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.8); /* Shadow putih lembut */
+  }
+  
+  #about .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  #about .author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #about .author h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #213448;
+  }
+  
+  #about .author a {
+    color: #213448;
+    font-size: 24px;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+  }
+  
+  #about .icon {
+    display: inline-block;
+  }
+  #about .author a:hover {
+    color: #547792; /* Warna hover ikon */
+  }
+  
+  #about .author a i {
+    margin: 0 5px;
+  }
+  
+  @media (max-width: 768px) {
+    #about .footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
   .bidang {
     display: flex;
     flex-wrap: wrap; /* biar responsif di layar kecil */
