@@ -2,6 +2,10 @@ head{
     font-family: Inter;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -26,6 +30,12 @@ body{
     z-index: 100;
     overflow: visible;
     box-sizing: border-box;
+    height: 85px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.hidden {
+    background-color: rgba(148, 180, 193, 0); /* Navbar menjadi transparan saat scroll ke bawah */
 }
 
 .logo a{
@@ -49,21 +59,37 @@ body{
     text-decoration: none;
     color: #213448;
     font-family: Inter;
-    font-weight: 500;
-    font-size: 20px;
+    /* font-weight: 500; */
+    font-size: 15px;
     font-weight: bold;
     transition: color 0.3s ease;
     white-space: nowrap;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .nav-links a:hover{
     color: #ECEFCA;
 }
 
+section{
+    padding: 100px 20px;
+}
+
 .awal{
     margin-top: 130px;
     font-family: Inter;
+}
+
+#home {
+    padding-top: 130px; /* biar nggak ketutup navbar */
+    padding-bottom: 100px;
+}
+
+#peminatan {
+    padding: 100px 20px;
 }
 
 h1{
@@ -84,6 +110,7 @@ p{
 
 .typing-animation {
     font-size: 3rem;
+    font: bold;
     width: fit-content;
     margin: 0 auto;
     overflow: hidden;
@@ -179,3 +206,43 @@ p{
         justify-content: center;
     }
 }
+  .bidang {
+    display: flex;
+    flex-wrap: wrap; /* biar responsif di layar kecil */
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Inter;
+  }
+
+  .bidang > div {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s ease;
+  }
+
+  .bidang > div:hover {
+    transform: translateY(-10px);
+  }
+  
+  .bidang img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  .bidang h3 {
+    font-size: 24px;
+    color: #ECEFCA;
+    margin-bottom: 10px;
+  }
+
+  .bidang h4 {
+    font-size: 16px;
+    color: #213448;
+  }
