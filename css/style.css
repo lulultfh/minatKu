@@ -32,6 +32,7 @@ body{
     box-sizing: border-box;
     height: 85px;
     transition: background-color 0.3s ease-in-out;
+    
 }
 
 .navbar.hidden {
@@ -136,76 +137,64 @@ p{
     50% { border-color: transparent; }
   }
 
-.footer {
+  #about {
+    padding: 50px 20px;
+    font-family: Inter, sans-serif;
+    color: #fff;
+    background-color: #4b4b4b(0, 0, 0, 0.6); /* Warna hitam transparan */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.8); /* Shadow putih lembut */
+  }
+  
+  #about .footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #222;
-    color: #eee;
-    padding: 20px 0;
-    margin-top: 50px;
-    flex-wrap: wrap; /* Membiarkan elemen-elemen terbungkus */
-}
-
-.author {
-    margin: 15px;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  #about .author {
     display: flex;
-    flex-direction: column; /* Menjadikan nama dan ikon terpisah dalam kolom */
-    align-items: center; /* Mengatur konten tetap terpusat */
-}
-
-.author h4 {
-    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #about .author h4 {
+    margin-bottom: 15px;
     font-size: 18px;
     font-weight: bold;
-    color: #fff;
-}
-
-/* Menjaga ikon dalam satu baris per author */
-.author a {
-    color: #fff;
-    text-decoration: none;
+    color: #213448;
+  }
+  
+  #about .author a {
+    color: #213448;
+    font-size: 24px;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+  }
+  
+  #about .icon {
     display: inline-block;
-    margin: 5px 10px;
-    font-size: 20px;
-}
-
-/* Menambahkan hover effect pada ikon */
-.author a:hover {
-    color: #ff6600;
-    text-decoration: none;
-}
-
-/* Styling untuk ikon Font Awesome */
-.author a i {
-    margin-right: 8px;
-    font-size: 20px;
-    vertical-align: middle;
-}
-
-/* Menjaga ikon dalam satu baris */
-.author {
-    display: flex;
-    flex-direction: row; /* Ikon ditampilkan dalam satu baris */
-    gap: 15px; /* Memberikan jarak antar ikon */
-    justify-content: center; /* Mengatur ikon agar tetap sejajar di tengah */
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        align-items: center;
+  }
+  #about .author a:hover {
+    color: #547792; /* Warna hover ikon */
+  }
+  
+  #about .author a i {
+    margin: 0 5px;
+  }
+  
+  @media (max-width: 768px) {
+    #about .footer {
+      flex-direction: column;
+      align-items: center;
     }
-    .author {
-        flex-direction: row;
-        justify-content: center;
-    }
-}
+  }
+  
   .bidang {
     display: flex;
     flex-wrap: wrap; /* biar responsif di layar kecil */
@@ -245,4 +234,30 @@ p{
   .bidang h4 {
     font-size: 16px;
     color: #213448;
+  }
+
+  .ujian{
+    font-family: Inter;
+    color: #213448;
+  }
+
+  .ujian h2{
+    font-size: 30px;
+  }
+
+  .ujian a{
+    font-size: 20px;
+    color: #547792;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+
+  .ujian a:hover{
+    background-color: #ECEFCA;
+    color: #213448;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   }

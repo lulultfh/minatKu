@@ -10,8 +10,10 @@
     <script src="js/script.js" defer></script>
 
 </head>
+
 <body>
-    <nav class="navbar">
+      
+    <nav class="navbar" id="navbar">
         <div class="logo">
             <a href="index.html">
                 <img src="Assets/minatKu_Logo.png" alt="logo" class="logo-img">
@@ -20,7 +22,8 @@
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#peminatan">Peminatan</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="#testMinat">Test</a></li>
+            <li><a href="#about">About</a></li>
         </ul>
     </nav>
     <section id="home">
@@ -64,46 +67,54 @@
                     of data to support better, evidence-based decision-making.</h4>
             </div>
         </div>
-        <div class="footer">
-            <div class="author">
-              <h4>Aulia</h4>
-              <a href="https://github.com/aulia" target="_blank">
-                <i class="fab fa-github"></i> 
-              </a><br>
-              <a href="https://linkedin.com/in/aulia" target="_blank">
-                <i class="fab fa-linkedin"></i> 
-              </a><br>
-              <a href="https://instagram.com/aulia" target="_blank">
-                <i class="fab fa-instagram"></i> 
-              </a>
-            </div>
-          
-            <div class="author">
-              <h4>Bagas</h4><br>
-              <a href="https://github.com/bagas" target="_blank">
-                <i class="fab fa-github"></i> 
-              </a><br>
-              <a href="https://linkedin.com/in/bagas" target="_blank">
-                <i class="fab fa-linkedin"></i> 
-              </a><br>
-              <a href="https://instagram.com/bagas" target="_blank">
-                <i class="fab fa-instagram"></i> 
-              </a>
-            </div>
-          
-            <div class="author">
-              <h4>Citra</h4>
-              <a href="https://github.com/citra" target="_blank">
-                <i class="fab fa-github"></i> 
-              </a><br>
-              <a href="https://linkedin.com/in/citra" target="_blank">
-                <i class="fab fa-linkedin"></i> 
-              </a><br>
-              <a href="https://instagram.com/citra" target="_blank">
-                <i class="fab fa-instagram"></i> 
-              </a>
-            </div>
-          </div>  
     </section>
+    <section id="testMinat">
+        <div class="ujian">
+            <h2>🌟Unlock your future starts here!</h2>
+            <a href="peminatan.html">Take the test now!</a>
+        </div>
+    </section>
+    <script>
+        let prevScrollPos = window.pageYOffset;
+        const navbar = document.getElementById("navbar");
+      
+        window.addEventListener("scroll", () => {
+          const currentScrollPos = window.pageYOffset;
+          if (prevScrollPos > currentScrollPos) {
+            navbar.style.top = "0"; // scroll ke atas, navbar muncul
+          } else {
+            navbar.style.top = "-100px"; // scroll ke bawah, navbar sembunyi
+          }
+          prevScrollPos = currentScrollPos;
+        });
+      </script>
+      <section id="about">
+        <div class="footer">
+          <div class="author">
+            <h4>Hanifatul Nadiva</h4>
+            <div class="icon">
+            <a href="https://github.com/bagas" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/bagas" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/bagas" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+          </div>
+          <div class="author">
+            <h4>Lu'lu' Lutfiah</h4>
+            <div class="icon">
+            <a href="https://github.com/bagas" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/bagas" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/bagas" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+          </div>
+          <div class="author">
+            <h4>Husna Kamila</h4>
+            <div class="icon">
+            <a href="https://github.com/bagas" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/bagas" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/bagas" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+          </div>
+        </div>  
+      </section>
 </body>
 </html>
