@@ -65,7 +65,12 @@ const questions = [
   }
   
   function prevQuestion() {
-    if (current > 0) {
+    if (current === 0) {
+      // Kembali ke layar awal
+      document.getElementById('quizScreen').classList.add('hidden');
+      document.getElementById('startScreen').classList.remove('hidden');
+      document.body.classList.remove('quiz-active');
+    } else {
       current--;
       showQuestion();
     }
