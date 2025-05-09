@@ -264,22 +264,30 @@ p{
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 50px; /* Mengurangi ukuran font untuk layar kecil */
-    }
+    /* Menyesuaikan navbar untuk layar kecil */
     .navbar {
-        flex-direction: column; /* Navbar menjadi vertikal */
-        padding: 15px 10px;
+        flex-direction: column;  /* Mengubah navbar menjadi kolom */
+        align-items: center;     /* Menyelaraskan item di tengah */
+        padding: 15px 10px;      /* Mengurangi padding supaya lebih rapat */
     }
-    .nav-links {
-        flex-direction: column; /* Menu navbar menjadi kolom */
-        gap: 20px;
-    }
-    .bidang > div {
-        width: 100%; /* Mengatur lebar bidang agar penuh di layar kecil */
-        margin-bottom: 20px; /* Spasi antara item */
-    }
+
     .logo a {
-        font-size: 25px; /* Menyesuaikan ukuran logo pada layar kecil */
+        font-size: 24px;         /* Ukuran font logo lebih kecil */
+    }
+
+    .nav-links {
+        flex-direction: column;  /* Menjadikan menu navbar kolom */
+        gap: 15px;               /* Mengurangi jarak antar menu */
+    }
+
+    .nav-links a {
+        font-size: 18px;         /* Ukuran font menu lebih kecil */
+        white-space: normal;     /* Agar menu bisa wrapping jika panjang */
+    }
+
+    /* Menyesuaikan h1 untuk layar kecil */
+    h1 {
+        font-size: 10vw; /* Ukuran font h1 menyesuaikan layar */
     }
 }
+
