@@ -1,0 +1,57 @@
+body {
+    background: #ECEFCA;
+    background: linear-gradient(0deg, rgba(236, 239, 202, 1) 0%, rgba(148, 180, 193, 1) 50%, rgba(84, 119, 146, 1) 100%);
+    background-attachment: fixed;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  h1 {
+    margin-top: 30px;
+    font-size: 2em;
+    color: #fff;
+  }
+  
+  .course {
+    background-color: rgba(255, 255, 255, 0.3); /* Membuat background hampir solid */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); 
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+  }
+  
+  .course h2 {
+    color: #2c3e50;
+  }
+  
+  .project-ideas {
+    padding-left: 20px;
+  }
+  
+  .back-button{
+    padding-bottom: 1px;
+  }
+  .back-button a{
+    font-size: 20px;
+    color: #547792;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .back-button a:hover {
+    background-color: #ECEFCA;
+    color: #213448;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  
