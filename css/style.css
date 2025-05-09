@@ -99,6 +99,7 @@ h1{
   color: #ECEFCA;
 }
 
+
 p{
   padding-left: 16px;
   padding-right: 16px;
@@ -260,4 +261,25 @@ p{
   color: #213448;
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px; /* Mengurangi ukuran font untuk layar kecil */
+    }
+    .navbar {
+        flex-direction: column; /* Navbar menjadi vertikal */
+        padding: 15px 10px;
+    }
+    .nav-links {
+        flex-direction: column; /* Menu navbar menjadi kolom */
+        gap: 20px;
+    }
+    .bidang > div {
+        width: 100%; /* Mengatur lebar bidang agar penuh di layar kecil */
+        margin-bottom: 20px; /* Spasi antara item */
+    }
+    .logo a {
+        font-size: 25px; /* Menyesuaikan ukuran logo pada layar kecil */
+    }
 }
